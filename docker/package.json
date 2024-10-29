@@ -4,7 +4,7 @@
   "description": "cicd for ecs",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
   },
   "repository": {
     "type": "git",
