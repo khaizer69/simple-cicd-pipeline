@@ -1,3 +1,14 @@
+terraform {
+  required_version = ">= 1.6"
+  
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 resource "aws_s3_bucket" "my_bucket" {
   #checkov:skip=CKV_AWS_18:Ensure the S3 bucket has access logging enabled
   #checkov:skip=CKV2_AWS_61:Ensure that an S3 bucket has a lifecycle configuration
