@@ -3,6 +3,8 @@ name: Terraform Checks
 on:
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'terraform/*'
 
 jobs:
   Terraform-Checks:
