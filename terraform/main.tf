@@ -8,5 +8,4 @@ resource "aws_s3_bucket" "my_bucket" {
   #checkov:skip=CKV_AWS_21:Ensure all data stored in the S3 bucket have versioning enabled
   bucket        = "luqman-simple-cicd-bucket-12345678"
   force_destroy = true
-  acl           = "public-read"
 }
